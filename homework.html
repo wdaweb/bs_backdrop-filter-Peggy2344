@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title> BS_backdrop-filter</title>
+  <style>
+    body{
+      background: url(./hw.jpeg) no-repeat center/cover;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .box{
+      overflow-x: scroll;
+    }
+    .h-90{
+      height: 90%;
+      border: 1px solid #eee;
+    }
+    .wrap{
+      flex-wrap: nowrap;
+    }
+    .none{
+      backdrop-filter: none
+    }
+    .grayscale{
+      backdrop-filter: grayscale(1)
+    }
+    .brightness{
+      backdrop-filter: brightness(1.5)
+    }
+    .blur{
+      backdrop-filter: blur(5px)
+    }
+    .contrast{
+      backdrop-filter: contrast(0.8)
+    }
+    .invert{
+      backdrop-filter: invert(0.7)
+    }
+    .opacity{
+      backdrop-filter: opacity(0.4)
+    }
+    .sepia{
+      backdrop-filter: sepia(0.4)
+    }
+    .saturate{
+      backdrop-filter: saturate(1.8)
+    }
+    .hue-rotate{
+      backdrop-filter: hue-rotate(120deg)
+    }
+    .row div{
+      color: white;
+      font-size: 1.5rem;
+    }
+    .row div:nth-child(1){
+      font-size: 2rem;
+    }
+    @media (max-width: 992px) {
+      .box{
+        overflow-x: hidden;
+      }
+      .h-90{
+        width: 80%;
+        height: 20%;
+      }
+      .wrap{
+      flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body class="vh-100 vw-100 m-0">
+  <div class="container-fluid h-100 container_box p-4">
+    <div class="row align-items-center justify-content-center justify-content-lg-start h-100 m-0 box wrap">
+      <div class="col-lg-3 col-11 h-90 SCROLL d-flex align-items-center justify-content-center">SCROLL→</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center none">backdrop-filter: none</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center grayscale">backdrop-filter: grayscale(1)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center brightness">backdrop-filter: brightness(1.5)</div> 
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center blur">backdrop-filter: blur(5px)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center contrast">backdrop-filter: contrast(0.8)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center invert">backdrop-filter: invert(0.7)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center opacity">backdrop-filter: opacity(0.4)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center sepia">backdrop-filter: sepia(0.4)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center saturate">backdrop-filter: saturate(1.8)</div>
+      <div class="col-lg-3 col-11 h-90 d-flex align-items-center justify-content-center hue-rotate">backdrop-filter: hue-rotate(120deg)</div>
+    </div>
+  </div>
+  <script src="./js/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- <script src="./js/bootstrap5.min.js"></script> -->
+  <script>
+  </script>
+</body>
+</html>
